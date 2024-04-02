@@ -1,0 +1,21 @@
+{% extends 'resident/layout.html.twig' %}
+
+{% block body_id 'quote_lookup' %}
+
+{% block main %}
+    <h1>Quotes</h1>
+    {% if isSuccess == false %}
+        API Response error
+    {% else %}
+        {% for quote in quotes %}
+            <div class="jumbotron">
+                <p class="mb-0"><strong>Quote</strong>: {{ quote.quote }}</p>
+                <p class="mb-0"><strong>Character</strong>: {{ quote.character }}</p>
+                <p class="mb-0"><img src="{{ quote.image }}"></p>
+                <p class="mb-0"><strong>Character direction</strong>: {{ quote.characterDirection }}</p>
+            </div>
+        {% else %}
+            No quotes found
+        {% endfor %}
+    {% endif %}
+{% endblock %}

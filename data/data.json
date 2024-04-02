@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "username": "edna.krabappel",
+        "gender": "female",
+        "birthday": "1965-01-21",
+        "firstname": "Edna",
+        "surname": "Krabappel",
+        "address": "82 Evergreen Terrace Springfield",
+        "quote": ""
+    },
+    {
+        "id": 2,
+        "username": "homer.simpson",
+        "gender": "male",
+        "birthday": "1951-05-12",
+        "firstname": "Homer",
+        "surname": "Simpson",
+        "address": "742 Evergreen Terrace Springfield",
+        "quote": "D’oh"
+    },
+    {
+        "id": 3,
+        "username": "marge.simpson",
+        "gender": "female",
+        "birthday": "1958-03-19",
+        "firstname": "Marge",
+        "surname": "Simpson",
+        "address": "742 Evergreen Terrace Springfield",
+        "quote": "Go out on a Tuesday? Who am I, Charlie Sheen?"
+    },
+    {
+        "id": 4,
+        "username": "barney.gumble",
+        "gender": "male",
+        "birthday": "1951-04-20",
+        "firstname": "Barney",
+        "surname": "Gumble",
+        "address": "Moes Tavern Springfield",
+        "quote": "I don’t mind if you pee in the shower, but only if you’re taking a shower."
+    },
+    {
+        "id": 5,
+        "username": "apu.nahasapeemapetilon",
+        "gender": "male",
+        "birthday": "1953-02-12",
+        "firstname": "Apu",
+        "surname": "Nahasapeemapetilon",
+        "address": "Kwik-E-Mart Springfield",
+        "quote": "We want chilly-willy! We want chilly-willy!"
+    },
+    {
+        "id": 6,
+        "username": "Snowball 2",
+        "gender": "diverse",
+        "birthday": "1978-06-01",
+        "firstname": "Snowball",
+        "surname": "2",
+        "address": "742 Evergreen Terrace Springfield",
+        "quote": "Meow..."
+    },
+    {
+        "id": 7,
+        "username": "marilda.mancka",
+        "firstname": "Marilda",
+        "surname": "Mancka",
+        "gender": "female",
+        "birthday": "1987-04-13",
+        "address": "Ackerstr. 156",
+        "quote": "I like fashion and sports."
+    }
+]

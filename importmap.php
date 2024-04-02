@@ -18,10 +18,6 @@ return [
         'path' => './assets/app.js',
         'entrypoint' => true,
     ],
-    'admin' => [
-        'path' => './assets/admin.js',
-        'entrypoint' => true,
-    ],
     '@hotwired/stimulus' => [
         'version' => '3.2.2',
     ],
@@ -111,5 +107,8 @@ return [
     ],
     'bootstrap-tagsinput' => [
         'version' => '0.7.1',
+    ],
+    '@symfony/ux-live-component' => [
+        'path' => './vendor/symfony/ux-live-component/assets/dist/live_controller.js',
     ],
 ];

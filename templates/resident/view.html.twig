@@ -1,0 +1,31 @@
+{% extends 'resident/layout.html.twig' %}
+
+{% block body_id 'resident_view' %}
+
+{% block main %}
+    <h1>{{ resident.firstname }} {{ resident.surname }}</h1>
+
+    <p class="post-metadata">
+        <span class="metadata"><i class="fa fa-calendar"></i> {{ resident.birthday }}</span>
+        <span class="metadata"><i class="fa fa-user"></i> {{ resident.username }}</span>
+    </p>
+
+    <div class="jumbotron">
+        <p class="mb-0"><strong>Id</strong>: {{ resident.id }}</p>
+        <p class="mb-0"><strong>Gender</strong>: {{ resident.gender }}</p>
+        <p class="mb-0"><strong>Address</strong>: {{ resident.address }}</p>
+        <p class="mb-0"><strong>Quote</strong>: {{ resident.quote }}</p>
+    </div>
+{% endblock %}
+
+{% block sidebar %}
+    <div class="section">
+        <a href="{{ path('resident_edit', {id: resident.id}) }}" class="btn btn-lg btn-block btn-success">
+            <i class="fa fa-edit" aria-hidden="true"></i> Edit
+        </a>
+    </div>
+
+    <div class="section">
+        {{ include('resident/delete.html.twig', {resident: resident}, with_context = false) }}
+    </div>
+{% endblock %}
