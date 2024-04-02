@@ -20,12 +20,12 @@ class ImportResidentsCommand extends Command
     {
         $this->setDescription('Import residents from json file')
             ->setHelp('Imports residents')
-            ->addArgument('username', InputArgument::REQUIRED, 'Username');
+            ->addArgument('admin', InputArgument::REQUIRED, 'Admin');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $username = $input->getArgument('username');
+        $username = $input->getArgument('admin');
         $output->writeln("Starting the import for user: $username");
         //import data
         $residents = $this->residentRepository->importResidentsFromFile();
